@@ -1,0 +1,26 @@
+<h3>Update Teacher</h3>
+<div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name"> First Name</label>
+            <input type="text" class="form-control" id="firstName" required [(ngModel)]="teacher.firstName" name="firstName">
+        </div>
+
+        <div class="form-group">
+            <label for="name"> Last Name </label>
+            <input type="text" class="form-control" id="lastName" required [(ngModel)]="teacher.lastName" name="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="name"> Age </label>
+            <input type="number" class="form-control" id="age" required [(ngModel)]="teacher.age" name="age">
+        </div>
+
+        <div class="form-group">
+            <label for="name"> Subject </label>
+            <input type="text" class="form-control" id="Subject" required [(ngModel)]="teacher.subject" name="subject">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
